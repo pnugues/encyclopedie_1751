@@ -1,4 +1,25 @@
 # Raccordement des articles géographiques de l'_Encyclopédie_ de Diderot à Wikidata
+
+_For a summary in English, see below._
+
+L’_Encyclopédie_ de Diderot est le plus grand ouvrage de référence du XVIIIe siècle. Il vise à rassembler tous les savoirs de son époque. Ce dépôt héberge un ensemble de données annotées de plus de 9 700 articles de l'_Encyclopédie_ avec des identifiants Wikidata. Ils nous permettent de connecter ces articles au graphe Wikidata.
+
+## Jeu de données
+Nous avons extrait la totalité des 15 274 articles géographiques et nous avons complètement annoté tous les articles contenant une description d'êtres humains. Cela représente plus de 2 600 liens renvoyant à des lieux ou à des êtres humains. De plus, nous avons annoté plus de 8 800 articles ayant un contenu uniquement géographique.
+
+Nous avons stocké l'ensemble de données dans le fichier JSON `encyclo_diderot_wd.json`. Il se compose d'une liste de dictionnaires Python, où chaque dictionnaire représente un article géographique de l'_Encyclopédie_. Un dictionnaire Python contient :
+    - La vedette de l'article (clé `vedette`),
+    - le texte de l'article (touche `texte`),
+    - l'identifiant d'article dans la version OCR de l'ENCCRE (http://enccre.academie-sciences.fr/encyclopedie/) (clé `entreeid`), et
+    - une liste d'identifiants wikidata, si l'article est annoté (clé `qid`).
+
+Par exemple, l'entrée _Grenoble_ décrit la ville de Grenoble et contient la biographie de deux juristes, Guy Pape et Jean Pierre Moret. Nous avons alors une liste de trois QID :<br/>```{'vedette': 'GRENOBLE', 'entreeid': 'v7-1475-0', 'texte': 'GRENOBLE, Gratianopolis, (Géogr.)\u200b ancienne ville de France, capitale du Dauphiné, avec un évêché suffragant de Vienne, & un parlement érigé en 1493 par Louis XI. qui n’étoit encore que dauphin ; ... On met au nombre des jurisconsultes dont Grenoble est la patrie, Pape (Guy), qui mourut en 1487 ; son recueil de décisions des plus belles questions de droit, n’est pas encore tombé dans l’oubli.\n\n\nM. de Bouchenu de Valbonnais, (Jean Pierre Moret) premier président du parlement de Grenoble, né dans cette ville le 23 Juin 1651, mérite le titre du plus savant historiographe de son pays, ... (D. J.)\u200b', 'qid': ['Q1289', 'Q41617345', 'Q3169582']}```
+
+De plus, un dictionnaire peut contenir :
+* Une clé `note` qui donne une indicaction sur la façon dont nous avons trouvé l'identifiant
+* Une clé `renvoi` où la valeur du `renvoi` contient l'`entreeid` cible dans la nomenclature ENCCRE. Dans ce cas, il n’y a pas de `qid`.
+* Une clé `qid_region` s'il n'y a pas de QID. Nous avons divisé le monde en 32 régions et nous avons attribué une région à chaque article que nous n'avons pas eu le temps d'annoter.
+
 ## Summary in English
 Diderot’s _Encyclopédie_ is a reference work from XVIIIth century in Europe that aimed at collecting the knowledge of its era. This repository hosts an annotated dataset of more than 9,700 of the _Encyclopédie_ entries with Wikidata identifiers enabling us to connect these entries to the Wikidata graph. 
 
