@@ -2,7 +2,7 @@
 
 _For a summary in English, see below._
 
-L’_Encyclopédie_ de Diderot est le plus grand ouvrage de référence du XVIIIe siècle. Il vise à rassembler tous les savoirs de son époque. Ce dépôt héberge un ensemble de données annotées de plus de 9 700 articles de l'_Encyclopédie_ avec des identifiants Wikidata. Ils nous permettent de connecter ces articles au graphe Wikidata.
+L’_Encyclopédie_ de Diderot est le plus grand ouvrage de référence du XVIIIe siècle. Il vise à rassembler tous les savoirs de son époque. Ce dépôt héberge un ensemble de données annotées de plus de 9 700 articles de l'_Encyclopédie_ avec des identifiants Wikidata. Ils nous permettent de connecter ces articles au graphe Wikidata et à Wikipedia.
 
 ## Jeu de données
 Nous avons extrait la totalité des 15 274 articles géographiques et nous avons complètement annoté tous les articles contenant une description d'êtres humains. Cela représente plus de 2 600 liens renvoyant à des lieux ou à des êtres humains. De plus, nous avons annoté plus de 8 800 articles ayant un contenu uniquement géographique.
