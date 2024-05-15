@@ -8,10 +8,10 @@ L’_Encyclopédie_ de Diderot est le plus grand ouvrage de référence du XVIII
 Nous avons extrait la totalité des 15 274 articles géographiques et nous avons complètement annoté tous les articles contenant une description d'êtres humains. Cela représente plus de 2 600 liens renvoyant à des lieux ou à des êtres humains. De plus, nous avons annoté plus de 8 800 articles ayant un contenu uniquement géographique.
 
 Nous avons stocké l'ensemble de données dans le fichier JSON `encyclo_diderot_wd.json`. Il se compose d'une liste de dictionnaires Python, où chaque dictionnaire représente un article géographique de l'_Encyclopédie_. Un dictionnaire Python contient :
-    - La vedette de l'article (clé `vedette`),
-    - le texte de l'article (touche `texte`),
-    - l'identifiant d'article dans la version OCR de l'ENCCRE (http://enccre.academie-sciences.fr/encyclopedie/) (clé `entreeid`), et
-    - une liste d'identifiants wikidata, si l'article est annoté (clé `qid`).
+- La vedette de l'article (clé `vedette`),
+- le texte de l'article (touche `texte`),
+- l'identifiant d'article dans la version OCR de l'ENCCRE (http://enccre.academie-sciences.fr/encyclopedie/) (clé `entreeid`), et
+- une liste d'identifiants wikidata, si l'article est annoté (clé `qid`).
 
 Par exemple, l'article _Grenoble_ décrit la ville de Grenoble et contient la biographie de deux juristes, Guy Pape et Jean Pierre Moret. Nous avons alors une liste de trois QID :<br/>```{'vedette': 'GRENOBLE', 'entreeid': 'v7-1475-0', 'texte': 'GRENOBLE, Gratianopolis, (Géogr.)\u200b ancienne ville de France, capitale du Dauphiné, avec un évêché suffragant de Vienne, & un parlement érigé en 1493 par Louis XI. qui n’étoit encore que dauphin ; ... On met au nombre des jurisconsultes dont Grenoble est la patrie, Pape (Guy), qui mourut en 1487 ; son recueil de décisions des plus belles questions de droit, n’est pas encore tombé dans l’oubli.\n\n\nM. de Bouchenu de Valbonnais, (Jean Pierre Moret) premier président du parlement de Grenoble, né dans cette ville le 23 Juin 1651, mérite le titre du plus savant historiographe de son pays, ... (D. J.)\u200b', 'qid': ['Q1289', 'Q41617345', 'Q3169582']}```
 
