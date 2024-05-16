@@ -18,7 +18,7 @@ Nous avons stocké le jeu de données dans le fichier JSON `diderot_1751_wd.json
 Par exemple, l'article _Grenoble_ décrit la ville de Grenoble et contient la biographie de deux juristes, Guy Pape et Jean Pierre Moret. La clé `qid` du dictionnaire Python est une liste de trois QIDs pour Grenoble et ces deux auteurs. Le dictionnaire complet est le suivant :<br/>```{'vedette': 'GRENOBLE', 'entreeid': 'v7-1475-0', 'texte': 'GRENOBLE, Gratianopolis, (Géogr.)\u200b ancienne ville de France, capitale du Dauphiné, avec un évêché suffragant de Vienne, & un parlement érigé en 1493 par Louis XI. qui n’étoit encore que dauphin ; ... On met au nombre des jurisconsultes dont Grenoble est la patrie, Pape (Guy), qui mourut en 1487 ; son recueil de décisions des plus belles questions de droit, n’est pas encore tombé dans l’oubli.\n\n\nM. de Bouchenu de Valbonnais, (Jean Pierre Moret) premier président du parlement de Grenoble, né dans cette ville le 23 Juin 1651, mérite le titre du plus savant historiographe de son pays, ... (D. J.)\u200b', 'qid': ['Q1289', 'Q41617345', 'Q3169582']}```
 
 De plus, un dictionnaire peut contenir :
-* Une clé `note` qui donne une indicaction sur la façon dont nous avons trouvé l'identifiant ;
+* Une clé `note` qui donne une indication sur la façon dont nous avons trouvé l'identifiant ;
 * Une clé `renvoi`. Certains articles de _Encyclopédie_ ne sont qu'un renvoi à un autre article. Dans ce cas, la valeur de la clé `renvoi` est l'`entreeid` cible dans la nomenclature ENCCRE. Un article avec un `renvoi` n’a pas de `qid`;
 * Une clé `qid_region` s'il n'y a pas de QID. Nous avons divisé le monde en 32 régions et nous avons attribué une région à chaque article que nous n'avons pas eu le temps d'annoter.
 
