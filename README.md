@@ -38,7 +38,7 @@ Si vous utilisez ce jeu de données, merci d'en citer l'origine avec les référ
 
 @misc{pnugues2024,
   author = {Pierre Nugues},
-  title = {Raccordement de l'{Encyclopédie} de Diderot à wikidata},
+  title = {Raccordement de l'{Encyclopédie} de Diderot à Wikidata},
   year = 2024,
   url = {https://github.com/pnugues/encyclopedie_1751}
 }
@@ -53,7 +53,7 @@ Diderot’s _Encyclopédie_ is a reference work from XVIIIth century in Europe t
 
 We extracted all the 15,274 geographic entries and we completely annotated all the entries containing a description of human entities. This represents more than 2,600 links referring to locations or human entities. In addition, we annotated more than 8,800 entries having a geographic content only. 
 
-We stored the dataset in the `encyclo_diderot_wd.json` JSON file. It consists of a list of Python dictionaries, where each dictionary represents a geographic entry from the _Encyclopédie_. A Python dictionary contains:
+We stored the dataset in the `encyclo_1751_wd` JSON file. It consists of a list of Python dictionaries, where each dictionary represents a geographic entry from the _Encyclopédie_. A Python dictionary contains:
    -  The entry headword (`vedette` key),
    -  the text of the entry (`texte` key),
    -  the entry identifier in the OCR version from ENCCRE (http://enccre.academie-sciences.fr/encyclopedie/) (`entreeid` key), and
