@@ -6,8 +6,14 @@ L’_Encyclopédie_ de Diderot est le plus grand ouvrage de référence du XVIII
 
 Ce dépôt héberge un jeu de données contenant 15 274 articles de géographie dont 9 700 sont annotés avec des identifiants Wikidata. Ces identifiants nous permettent de connecter les articles au graphe Wikidata et à Wikipedia.
 
-## Jeu de données
+## Contenu du dépôt
 Nous avons extrait la totalité des 15 274 articles géographiques l’_Encyclopédie_. Certains de ces articles contiennent des biographies. Nous avons complètement annoté tous les articles correspondants. Cela représente plus de 2 600 liens renvoyant à des lieux ou à des êtres humains. Nous avons aussi annoté plus de 8 800 articles ayant uniquement une description géographique.
+* Le fichier JSON `diderot_1751_wd.json` contient une liste de dictionnaires Python où chaque dictionnaire représente un article de l'_Encyclopédie_. Voyez sa structure plus bas ;
+* Le dossier `src` contient un notebook jupyter pour extraire des données de Wikidata à partir d'un QID. Il a comme entrée le fichier JSON précédent. Le dossier contient aussi les fichiers JSON résultant de cette extraction ;
+* Le dossier `doc` contient mon poster à LREC et des transparents d'explication.
+
+## Structure du jeu de données
+
 
 Nous avons stocké le jeu de données dans le fichier JSON `diderot_1751_wd.json`. Il se compose d'une liste de dictionnaires Python, où chaque dictionnaire correspond à un article géographique de l'_Encyclopédie_. Un dictionnaire Python contient :
 - La vedette de l'article (clé `vedette`),
