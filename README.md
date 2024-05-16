@@ -44,7 +44,7 @@ Si vous utilisez ce jeu de données, merci d'en citer l'origine avec les référ
 }
 ```
 ## Remerciements
-Le texte provient du site ENCCRE (http://enccre.academie-sciences.fr/encyclopedie/), lui-même provenant de Wikisource (https://fr.wikisource.org/wiki/Encyclop%C3%A9die,_ou_Dictionnaire_raisonn%C3%A9_des_sciences,_des_arts_et_des_m%C3%A9tiers).
+Le texte provient du site ENCCRE (http://enccre.academie-sciences.fr/encyclopedie/), lui-même provenant de Wikisource (https://fr.wikisource.org/wiki/Encyclopédie,_ou_Dictionnaire_raisonné_des_sciences,_des_arts_et_des_métiers).
 
 J'ai réalisé moi-même et manuellement tous les raccordements entre les articles et les identifiants wikidata.
 
