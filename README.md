@@ -19,7 +19,7 @@ Par exemple, l'article _Grenoble_ décrit la ville de Grenoble et contient la bi
 
 De plus, un dictionnaire peut contenir :
 * Une clé `note` qui donne une indicaction sur la façon dont nous avons trouvé l'identifiant ;
-* Une clé `renvoi`. Certains articles de _Encyclopédie_ ne sont qu'un renvoi à un autre article. Dans ce cas, la valeur de la clé `renvoi` est l'`entreeid` cible dans la nomenclature ENCCRE. Un article avec èrnvoi` n’a pas de `qid`;
+* Une clé `renvoi`. Certains articles de _Encyclopédie_ ne sont qu'un renvoi à un autre article. Dans ce cas, la valeur de la clé `renvoi` est l'`entreeid` cible dans la nomenclature ENCCRE. Un article avec un `renvoi` n’a pas de `qid`;
 * Une clé `qid_region` s'il n'y a pas de QID. Nous avons divisé le monde en 32 régions et nous avons attribué une région à chaque article que nous n'avons pas eu le temps d'annoter.
 
 ## Citer ce jeu de données
