@@ -9,7 +9,7 @@ Ce dépôt héberge un jeu de données contenant 15 274 articles de géographie 
 ## Jeu de données
 Nous avons extrait la totalité des 15 274 articles géographiques l’_Encyclopédie_. Certains de ces articles contiennent des biographies. Nous avons complètement annoté tous les articles correspondants. Cela représente plus de 2 600 liens renvoyant à des lieux ou à des êtres humains. Nous avons aussi annoté plus de 8 800 articles ayant uniquement une description géographique.
 
-Nous avons stocké le jeu de données dans le fichier JSON `encyclo_1751_wd.json`. Il se compose d'une liste de dictionnaires Python, où chaque dictionnaire correspond à un article géographique de l'_Encyclopédie_. Un dictionnaire Python contient :
+Nous avons stocké le jeu de données dans le fichier JSON `diderot_1751_wd.json`. Il se compose d'une liste de dictionnaires Python, où chaque dictionnaire correspond à un article géographique de l'_Encyclopédie_. Un dictionnaire Python contient :
 - La vedette de l'article (clé `vedette`),
 - le texte de l'article (clé `texte`),
 - l'identifiant d'article dans la version OCR de l'ENCCRE (http://enccre.academie-sciences.fr/encyclopedie/) (clé `entreeid`), et
@@ -53,7 +53,7 @@ Diderot’s _Encyclopédie_ is a reference work from XVIIIth century in Europe t
 
 We extracted all the 15,274 geographic entries and we completely annotated all the entries containing a description of human entities. This represents more than 2,600 links referring to locations or human entities. In addition, we annotated more than 8,800 entries having a geographic content only. 
 
-We stored the dataset in the `encyclo_1751_wd` JSON file. It consists of a list of Python dictionaries, where each dictionary represents a geographic entry from the _Encyclopédie_. A Python dictionary contains:
+We stored the dataset in the `diderot_1751_wd.json` JSON file. It consists of a list of Python dictionaries, where each dictionary represents a geographic entry from the _Encyclopédie_. A Python dictionary contains:
    -  The entry headword (`vedette` key),
    -  the text of the entry (`texte` key),
    -  the entry identifier in the OCR version from ENCCRE (http://enccre.academie-sciences.fr/encyclopedie/) (`entreeid` key), and
