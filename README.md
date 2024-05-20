@@ -40,7 +40,7 @@ Si vous utilisez ce jeu de données, merci d'en citer l'origine avec les référ
   year           = {2024},
   address        = {Torino, Italy},
   pages = {10610--10615},
-  publisher      = {European Language Resources Association},
+  publisher      = {ELRA and ICCL},
 }
 
 @misc{pnugues2024,
