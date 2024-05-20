@@ -34,11 +34,12 @@ Si vous utilisez ce jeu de données, merci d'en citer l'origine avec les référ
 ```
 @InProceedings{nugues:2024:LREC,
   author    = {Nugues, Pierre},
-  title     = {Linking Named Entities in Diderot's Encyclopédie to Wikidata},
-  booktitle      = {Proceedings of the Language Resources and Evaluation Conference},
+  title     = {Linking Named Entities in {D}iderot's {E}ncyclopédie to {W}ikidata},
+  booktitle      = {Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)},
   month          = {May},
   year           = {2024},
   address        = {Torino, Italy},
+  pages = {10610--10615},
   publisher      = {European Language Resources Association},
 }
 
