@@ -4,7 +4,7 @@ _For a summary in English, see below._
 
 L’_Encyclopédie_ de Diderot est le plus grand ouvrage de référence du XVIIIe siècle. Il vise à rassembler les savoirs de son époque. L’_Encyclopédie_ classe les articles par grands domaines comme la géographie, la botanique, l'économie, etc.
 
-Ce dépôt héberge un jeu de données contenant 15 274 articles de géographie dont 9 700 sont annotés avec des identifiants Wikidata. Ces identifiants nous permettent de connecter les articles au graphe Wikidata et à Wikipedia.
+Ce dépôt héberge un jeu de données contenant 15 274 articles de géographie dont plus de 9 800 sont annotés avec des identifiants Wikidata. Ces identifiants nous permettent de connecter les articles au graphe Wikidata et à Wikipedia.
 
 ## Contenu du dépôt
 Nous avons extrait la totalité des 15 274 articles géographiques l’_Encyclopédie_. Certains de ces articles contiennent des biographies. Nous avons complètement annoté tous les articles correspondants. Cela représente plus de 2 600 liens renvoyant à des lieux ou à des êtres humains. Nous avons aussi annoté plus de 8 800 articles ayant uniquement une description géographique.
