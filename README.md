@@ -56,7 +56,7 @@ Le texte provient du site ENCCRE (http://enccre.academie-sciences.fr/encyclopedi
 J'ai réalisé moi-même et manuellement tous les raccordements entre les articles et les identifiants wikidata.
 
 ## Summary in English
-Diderot’s _Encyclopédie_ is a reference work from XVIIIth century in Europe that aimed at collecting the knowledge of its era. This repository hosts an annotated dataset of more than 9,700 of the _Encyclopédie_ entries with Wikidata identifiers enabling us to connect these entries to the Wikidata graph. 
+Diderot’s _Encyclopédie_ is a reference work from XVIIIth century in Europe that aimed at collecting the knowledge of its era. This repository hosts an annotated dataset of more than 9,800 of the _Encyclopédie_ entries with Wikidata identifiers enabling us to connect these entries to the Wikidata graph. 
 
 We extracted all the 15,274 geographic entries and we completely annotated all the entries containing a description of human entities. This represents more than 2,600 links referring to locations or human entities. In addition, we annotated more than 8,800 entries having a geographic content only. 
 
