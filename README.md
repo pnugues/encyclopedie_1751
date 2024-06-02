@@ -4,10 +4,10 @@ _For a summary in English, see below._
 
 L’_Encyclopédie_ de Diderot est le plus grand ouvrage de référence du XVIIIe siècle. Il vise à rassembler les savoirs de son époque. L’_Encyclopédie_ classe les articles par grands domaines comme la géographie, la botanique, l'économie, etc.
 
-Ce dépôt héberge un jeu de données contenant 15 274 articles de géographie dont plus de 10 000 sont annotés avec des identifiants Wikidata. Ces identifiants nous permettent de connecter les articles au graphe Wikidata et à Wikipedia.
+Ce dépôt héberge un jeu de données contenant 15 274 articles de géographie dont plus de 10 400 sont annotés avec des identifiants Wikidata. Ces identifiants nous permettent de connecter les articles au graphe Wikidata et à Wikipedia.
 
 ## Contenu du dépôt
-Nous avons extrait la totalité des 15 274 articles géographiques l’_Encyclopédie_. Certains de ces articles contiennent des biographies. Nous avons complètement annoté tous les articles correspondants. Cela représente plus de 2 600 liens renvoyant à des lieux ou à des êtres humains. Nous avons aussi annoté plus de 9 100 articles ayant uniquement une description géographique.
+Nous avons extrait la totalité des 15 274 articles géographiques l’_Encyclopédie_. Certains de ces articles contiennent des biographies. Nous avons complètement annoté tous les articles correspondants. Cela représente plus de 2 600 liens renvoyant à des lieux ou à des êtres humains. Nous avons aussi annoté plus de 9 500 articles ayant uniquement une description géographique.
 * Le fichier JSON `diderot_1751_wd.json` contient une liste de dictionnaires Python où chaque dictionnaire représente un article de l'_Encyclopédie_. Voyez sa structure plus bas ;
 * Le dossier `src` contient un notebook jupyter pour extraire des données de Wikidata à partir d'un QID. Il a comme entrée le fichier JSON précédent. Le dossier contient aussi les fichiers JSON résultant de cette extraction ;
 * Le dossier `docs` contient mon poster à LREC et des transparents d'explication.
@@ -56,9 +56,9 @@ Le texte provient du site ENCCRE (http://enccre.academie-sciences.fr/encyclopedi
 J'ai réalisé moi-même et manuellement tous les raccordements entre les articles et les identifiants wikidata.
 
 ## Summary in English
-Diderot’s _Encyclopédie_ is a reference work from XVIIIth century in Europe that aimed at collecting the knowledge of its era. This repository hosts an annotated dataset of more than 10,000 of the _Encyclopédie_ entries with Wikidata identifiers enabling us to connect these entries to the Wikidata graph. 
+Diderot’s _Encyclopédie_ is a reference work from XVIIIth century in Europe that aimed at collecting the knowledge of its era. This repository hosts an annotated dataset of more than 10,400 of the _Encyclopédie_ entries with Wikidata identifiers enabling us to connect these entries to the Wikidata graph. 
 
-We extracted all the 15,274 geographic entries and we completely annotated all the entries containing a description of human entities. This represents more than 2,600 links referring to locations or human entities. In addition, we annotated more than 9,100 entries having a geographic content only. 
+We extracted all the 15,274 geographic entries and we completely annotated all the entries containing a description of human entities. This represents more than 2,600 links referring to locations or human entities. In addition, we annotated more than 9,500 entries having a geographic content only. 
 
 We stored the dataset in the `diderot_1751_wd.json` JSON file. It consists of a list of Python dictionaries, where each dictionary represents a geographic entry from the _Encyclopédie_. A Python dictionary contains:
    -  The entry headword (`vedette` key),
