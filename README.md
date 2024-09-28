@@ -12,6 +12,8 @@ Nous avons extrait la totalité des 15 274 articles géographiques l’_Encyclop
 * Le dossier `src` contient un notebook jupyter pour extraire des données de Wikidata à partir d'un QID. Il a comme entrée le fichier JSON précédent. Le dossier contient aussi les fichiers JSON résultant de cette extraction ;
 * Le dossier `docs` contient mon poster à LREC et des transparents d'explication.
 
+Notez que je complète ou corrige de temps en temps le fichier `diderot_1751_wd.json` sans systématiquement mettre à jour les fichiers d'extraction. Ces derniers nécessitent d'interroger wikidata qui ne répond pas toujours aux requêtes automatisées.
+
 ## Structure du jeu de données
 
 
