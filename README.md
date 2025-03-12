@@ -4,20 +4,20 @@ _For a summary in English, see below._
 
 L’_Encyclopédie_ de Diderot est le plus grand ouvrage de référence du XVIIIe siècle. Il vise à rassembler les savoirs de son époque. L’_Encyclopédie_ classe les articles par grands domaines comme la géographie, la botanique, l'économie, etc.
 
-Ce dépôt héberge un jeu de données contenant 15 274 articles de géographie dont plus de 10 400 sont annotés avec des identifiants Wikidata. Ces identifiants nous permettent de connecter les articles au graphe Wikidata et à Wikipedia.
+Ce dépôt héberge un jeu de données contenant 15 274 articles de géographie dont plus de 10 400 sont annotés avec des identifiants Wikidata. Ces identifiants permettent de relier les articles de l’_Encyclopédie_ au graphe Wikidata et à Wikipedia.
 
 ## Contenu du dépôt
-Nous avons extrait la totalité des 15 274 articles géographiques l’_Encyclopédie_. Certains de ces articles contiennent des biographies. Nous avons complètement annoté tous les articles correspondants. Cela représente plus de 2 600 liens renvoyant à des lieux ou à des êtres humains. Nous avons aussi annoté plus de 9 500 articles ayant uniquement une description géographique.
+J'ai extrait la totalité des 15 274 articles géographiques l’_Encyclopédie_. Certains de ces articles contiennent des biographies. J'ai complètement annoté tous les articles correspondants avec des identifiants Wikidata (QID). Cela représente plus de 2 600 liens renvoyant à des lieux ou à des êtres humains. J'ai aussi annoté plus de 9 500 articles ayant uniquement une description géographique.
 * Le fichier JSON `diderot_1751_wd.json` contient une liste de dictionnaires Python où chaque dictionnaire représente un article de l'_Encyclopédie_. Voyez sa structure plus bas ;
-* Le dossier `src` contient un notebook jupyter pour extraire des données de Wikidata à partir d'un QID. Il a comme entrée le fichier JSON précédent. Le dossier contient aussi les fichiers JSON résultant de cette extraction ;
+* Le dossier `src` contient un bloc-note jupyter pour extraire des données de Wikidata à partir d'un QID. Il a comme entrée le fichier JSON précédent. Le dossier contient aussi les fichiers JSON résultant de cette extraction ;
 * Le dossier `docs` contient mon poster à LREC et des transparents d'explication.
 
-Notez que je complète ou corrige de temps en temps le fichier `diderot_1751_wd.json` sans systématiquement mettre à jour les fichiers d'extraction. Ces derniers nécessitent d'interroger wikidata qui ne répond pas toujours aux requêtes automatisées.
+Notez que je complète ou corrige de temps en temps le fichier `diderot_1751_wd.json` sans systématiquement mettre à jour les fichiers d'extraction. Ces derniers nécessitent d'interroger Wikidata qui ne répond pas toujours aux requêtes automatisées.
 
 ## Structure du jeu de données
 
 
-Nous avons stocké le jeu de données dans le fichier JSON `diderot_1751_wd.json`. Il se compose d'une liste de dictionnaires Python, où chaque dictionnaire correspond à un article géographique de l'_Encyclopédie_. Un dictionnaire Python contient :
+J'ai stocké le jeu de données dans le fichier JSON `diderot_1751_wd.json`. Il se compose d'une liste de dictionnaires Python, où chaque dictionnaire correspond à un article géographique de l'_Encyclopédie_. Un dictionnaire Python contient :
 - La vedette de l'article (clé `vedette`),
 - le texte de l'article (clé `texte`),
 - l'identifiant d'article dans la version OCR de l'ENCCRE (http://enccre.academie-sciences.fr/encyclopedie/) (clé `entreeid`), et
@@ -26,9 +26,9 @@ Nous avons stocké le jeu de données dans le fichier JSON `diderot_1751_wd.json
 Par exemple, l'article _Grenoble_ décrit la ville de Grenoble et contient la biographie de deux juristes, Guy Pape et Jean Pierre Moret. La clé `qid` du dictionnaire Python est une liste de trois QIDs pour Grenoble et ces deux auteurs. Le dictionnaire complet est le suivant :<br/>```{'vedette': 'GRENOBLE', 'entreeid': 'v7-1475-0', 'texte': 'GRENOBLE, Gratianopolis, (Géogr.)\u200b ancienne ville de France, capitale du Dauphiné, avec un évêché suffragant de Vienne, & un parlement érigé en 1493 par Louis XI. qui n’étoit encore que dauphin ; ... On met au nombre des jurisconsultes dont Grenoble est la patrie, Pape (Guy), qui mourut en 1487 ; son recueil de décisions des plus belles questions de droit, n’est pas encore tombé dans l’oubli.\n\n\nM. de Bouchenu de Valbonnais, (Jean Pierre Moret) premier président du parlement de Grenoble, né dans cette ville le 23 Juin 1651, mérite le titre du plus savant historiographe de son pays, ... (D. J.)\u200b', 'qid': ['Q1289', 'Q41617345', 'Q3169582']}```
 
 De plus, un dictionnaire peut contenir :
-* Une clé `note` qui donne une indication sur la façon dont nous avons trouvé l'identifiant ;
+* Une clé `note` qui donne une indication sur la façon dont j'ai retrouvé l'identifiant ;
 * Une clé `renvoi`. Certains articles de _Encyclopédie_ ne sont qu'un renvoi à un autre article. Dans ce cas, la valeur de la clé `renvoi` est l'`entreeid` cible dans la nomenclature ENCCRE. Un article avec un `renvoi` n’a pas de `qid`;
-* Une clé `qid_region` s'il n'y a pas de QID. Nous avons divisé le monde en 32 régions et nous avons attribué une région à chaque article que nous n'avons pas eu le temps d'annoter.
+* Une clé `qid_region` s'il n'y a pas de QID. J'ai divisé le monde en 32 régions et j'ai attribué une région à chaque article que je n'ai pas eu le temps d'annoter.
 
 ## Citer ce jeu de données
 Si vous utilisez ce jeu de données, merci d'en citer l'origine avec les références suivantes :
