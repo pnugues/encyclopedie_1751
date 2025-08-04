@@ -30,11 +30,12 @@ De plus, un dictionnaire peut contenir :
 
 ## Données complémentaires
 J'ai ajouté deux clés expérimentales :
- * `coord_extr`: une liste contenant les coordonnées extraites du texte de l'article ;
+ * `coord_extr`: une liste contenant les coordonnées géographiques dans l'article extraites automatiquement du texte par une expression régulière élémentaire ;
  * `mérid_orig`: une liste contenant les méridiens d'origine, s'ils sont mentionnés dans l'article.
-J'ai extrait ces coordonnées avec une expression régulière élémentaire et j'en détecte un peu plus de 3800. Elle se trouve dans le programme `src/analyse_coordonnées_v2.ipynb`.
 
-Mon expression régulière rate un certain nombre de coordonnées. À titre de comparaison, T. Joliveau, L. Moncla, A. Taroni, D. Vigier & K. McDonough en trouvent 4457. Voyez leur article : _A digital exploration of geographic knowledge in Diderot and d’Alembert’s Encyclopedia_, https://hal.science/hal-04625233v1/file/Slides_ICHC_2024.pdf. Dans une version ultérieure, j'essaierai de l'améliorer, notamment en ajoutant la détection de l'hémisphère pour la latitude.
+De tous les articles de géographie, j'ai pu identifier des coordonnées dans un peu plus de 3800 d'entre eux. Notez que la plupart des articles ne contiennent pas de coordonnées. L'expression régulière se trouve dans le programme `src/analyse_coordonnées_v2.ipynb`.
+
+Mon expression régulière manque un certain nombre de coordonnées. À titre de comparaison, T. Joliveau, L. Moncla, A. Taroni, D. Vigier & K. McDonough en trouvent 4457. Voyez leur article : _A digital exploration of geographic knowledge in Diderot and d’Alembert’s Encyclopedia_, https://hal.science/hal-04625233v1/file/Slides_ICHC_2024.pdf. Dans une version ultérieure, j'essaierai de l'améliorer, notamment en ajoutant la détection de l'hémisphère pour la latitude.
 
 ## Citer ce jeu de données
 Si vous utilisez ce jeu de données, merci d'en citer l'origine avec les références suivantes :
