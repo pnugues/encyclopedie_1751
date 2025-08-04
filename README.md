@@ -9,7 +9,7 @@ Ce dépôt héberge un jeu de données contenant 15 274 articles de géographie 
 ## Contenu du dépôt
 J'ai extrait la totalité des 15 274 articles géographiques l’_Encyclopédie_. Certains de ces articles contiennent des biographies. J'ai complètement annoté tous les articles correspondants avec des identifiants Wikidata (QID). Cela représente plus de 2 600 liens renvoyant à des lieux ou à des êtres humains. J'ai aussi annoté plus de 9 500 articles ayant uniquement une description géographique.
 * Le fichier JSON `diderot_1751_wd.json` contient une liste de dictionnaires Python où chaque dictionnaire représente un article de l'_Encyclopédie_. Voyez sa structure plus bas ;
-* Le dossier `src` contient un bloc-note jupyter pour extraire des données de Wikidata à partir d'un QID. Il a comme entrée le fichier JSON précédent. Le dossier contient aussi les fichiers JSON résultant de cette extraction ;
+* Le dossier `src` contient des blocs-notes jupyter pour extraire des données de Wikidata à partir d'un QID. Il a comme entrée le fichier JSON précédent. Le dossier contient aussi les fichiers JSON résultant de cette extraction ;
 * Le dossier `docs` contient mon poster à LREC et des transparents d'explication.
 
 Notez que je complète ou corrige de temps en temps le fichier `diderot_1751_wd.json` sans systématiquement mettre à jour les fichiers d'extraction. Ces derniers nécessitent d'interroger Wikidata qui ne répond pas toujours aux requêtes automatisées.
